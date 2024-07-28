@@ -55,7 +55,7 @@ export function DataTableToolbar<TData>({
         </div>
         <DataTableViewOptions table={table} />
       </div>
-      {show && <DataTableRowAdd table={table} />}
+      {show && <DataTableRowAdd />}
     </>
   );
 }

@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { z } from "zod";
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, onSnapshot, query } from 'firebase/firestore';
-import { firebaseConfig } from "@/firebase.js";
-import { UserNav } from "@/components/user-nav/user-nav";
+import { firebaseConfig } from "@/firebase";
 import { DataTable } from "@/components/data-table/DataTable";
 import { columns } from "@/components/data-table/Columns";
 import { taskSchema } from "@/data/schema";
@@ -64,7 +63,7 @@ export default function App() {
     }
 
     return (
-        <div className="hidden h-full flex-1 flex-col space-y-8 p-8 md:flex">
+        <div className="h-full flex-1 flex-col space-y-8 p-8 md:flex">
             <div className="flex items-center justify-between space-y-2">
                 <div>
                     <h2 className="text-2xl font-bold tracking-tight">TODO List</h2>

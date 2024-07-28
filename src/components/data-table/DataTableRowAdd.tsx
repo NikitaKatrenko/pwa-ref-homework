@@ -39,9 +39,7 @@ export function DataTableRowAdd() {
                 placeholder="Name"
                 className="w-[250px] lg:w-[250px]"
                 value={newTaskName}
-                onChange={(e) => {
-                  setNewTaskName(e.target.value);
-                }}
+                onChange={(e) => setNewTaskName(e.target.value)}
             />
             <Input
                 placeholder="New task..."
